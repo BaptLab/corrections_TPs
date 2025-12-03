@@ -1,0 +1,84 @@
+/* Style général */
+body {
+	font-family: Arial, sans-serif; /* Définit la police principale */
+	margin: 0; /* Enlève la marge par défaut */
+	padding: 0; /* Supprime les espacements internes par défaut */
+	background-color: #f5f5f5; /* Fond gris clair de la page */
+}
+
+.zone {
+	border: 2px solid #333; /* Bordure noire épaisse pour visualiser les zones */
+	margin: 10px; /* Espace extérieur autour de chaque zone */
+	text-align: center; /* Centre le texte horizontalement */
+	padding: 20px; /* Espace interne */
+	font-weight: bold; /* Texte en gras */
+	background-color: white; /* Fond blanc pour contraster les zones */
+}
+
+/* Header */
+.header {
+	display: flex; /* Active flexbox → éléments alignés sur une ligne */
+	justify-content: space-between; /* Espace maximal entre logo et menu */
+	align-items: center; /* Centre verticalement les éléments */
+	background-color: #d0e0ff; /* Bleu clair pour différencier la zone */
+	height: 80px; /* Hauteur fixe du header */
+}
+
+.logo {
+	width: 30%; /* Largeur réservée pour le logo */
+	border: 1px dashed #333; /* Bordure pointillée = placeholder visuel */
+	padding: 10px; /* Espacement interne */
+}
+
+.menu {
+	width: 60%; /* Zone plus large pour le menu */
+	border: 1px dashed #333;
+	padding: 10px;
+}
+
+/* Section principale (hero) */
+.hero {
+	display: flex; /* Met texte + image côte à côte */
+	justify-content: space-between; /* Espace maximal entre les deux blocs */
+	align-items: center; /* Alignement vertical centré */
+	background-color: #fff2cc; /* Fond jaune pâle pour identifier la zone */
+	height: 150px; /* Hauteur totale de la section */
+}
+
+.hero-txt,
+.hero-img {
+	border: 1px dashed #333; /* Bordure pointillée pour visualiser les blocs */
+	width: 45%; /* Chaque bloc prend presque la moitié de la largeur */
+	height: 100px; /* Hauteur interne des blocs */
+	display: flex; /* Permet le centrage du texte */
+	justify-content: center; /* Centre horizontalement */
+	align-items: center; /* Centre verticalement */
+}
+
+/* Section cartes (features) */
+.features {
+	display: flex; /* Les cartes sont alignées horizontalement */
+	justify-content: space-around; /* Espace réparti uniformément entre les cartes */
+	align-items: center; /* Alignement vertical */
+	background-color: #e8e8e8; /* Fond gris léger */
+	padding: 20px; /* Espacement interne de la section */
+}
+
+.card {
+	border: 1px dashed #333; /* Bordure pointillée = placeholder */
+	width: 25%; /* Largeur de chaque carte */
+	height: 100px; /* Hauteur fixe */
+	display: flex; /* Nécessaire pour centrer le contenu */
+	justify-content: center; /* Centre horizontalement */
+	align-items: center; /* Centre verticalement */
+	background-color: #fff; /* Fond blanc */
+}
+
+/* Footer */
+.footer {
+	background-color: #d0e0ff; /* Même couleur que le header */
+	height: 60px; /* Hauteur fixe */
+	display: flex; /* Active flexbox */
+	justify-content: center; /* Centre horizontalement */
+	align-items: center; /* Centre verticalement  */
+}

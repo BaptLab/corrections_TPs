@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Indique que le document utilise le standard HTML5 -->
+
+<html lang="fr">
+	<!-- Balise racine + langue de la page (important accessibilité / SEO) -->
+	<head>
+		<!-- Métadonnées : encodage, titre, lien CSS… non affiché dans la page -->
+		<meta charset="UTF-8" />
+		<!-- Encodage universel UTF-8 (gère les accents) -->
+		<title>Maquette RGPD - Filaire</title>
+		<!-- Titre affiché dans l’onglet du navigateur -->
+
+		<link rel="stylesheet" href="maquette.css" />
+		<!-- Lien vers le fichier CSS externe contenant les styles -->
+	</head>
+
+	<body>
+		<!-- Contenu visible de la page -->
+
+		<header class="zone header">
+			<!-- header = en-tête du site -->
+			<!-- class="zone header" → double classe : zone (style générique) + header (style spécifique) -->
+
+			<div class="logo">LOGO</div>
+			<!-- div = conteneur générique -->
+			<!-- class="logo" = style appliqué via CSS -->
+
+			<nav class="menu">MENU</nav>
+			<!-- nav = zone dédiée à la navigation (même si ici juste un placeholder) -->
+			<!-- class="menu" = style particulier pour ce bloc -->
+		</header>
+
+		<main class="zone main">
+			<!-- main = contenu principal du document -->
+
+			<section class="hero">
+				<!-- section = bloc thématique -->
+				<!-- class="hero" = structure visuelle type “bannière” -->
+
+				<div class="hero-txt">HERO TEXTE</div>
+				<!-- zone texte de la bannière -->
+
+				<div class="hero-img">HERO IMAGE</div>
+				<!-- zone image de la bannière -->
+			</section>
+
+			<section class="features">
+				<!-- section contenant les cartes / fonctionnalités -->
+				<!-- class="features" = zone stylisée en flex -->
+
+				<div class="card">CARTE 1</div>
+				<!-- class="card" = bloc de petite taille -->
+
+				<div class="card">CARTE 2</div>
+
+				<div class="card">CARTE 3</div>
+			</section>
+		</main>
+
+		<footer class="zone footer">
+			<!-- footer = bas de page -->
+			<!-- class=" zone footer" = style générique + style spécifique -->
+			FOOTER
+		</footer>
+	</body>
+</html>

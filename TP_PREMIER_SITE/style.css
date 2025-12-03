@@ -1,0 +1,11 @@
+.sous-titre {
+	color: #ff0000;
+}
+.important {
+	color: green;
+}
+#about {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}

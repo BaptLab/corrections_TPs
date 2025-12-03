@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Indique au navigateur que le document est en HTML5 -->
+
+<html lang="fr">
+	<!-- Balise racine du document, avec langue du contenu (français) -->
+	<head>
+		<!-- En-tête du document : contient les métadonnées, pas le contenu affiché -->
+		<meta charset="UTF-8" />
+		<!-- Encodage des caractères (UTF-8 = standard web, gère les accents) -->
+		<title>LexisNova – Cabinet d’avocats</title>
+		<!-- Titre de la page, affiché dans l’onglet du navigateur -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- Lien vers le fichier CSS externe pour le style -->
+	</head>
+
+	<body>
+		<!-- Contenu principal affiché dans la fenêtre du navigateur -->
+
+		<!-- SIDEBAR -->
+		<aside class="sidebar">
+			<!-- aside = contenu secondaire (menu, infos latérales) -->
+			<!-- class = nom utilisé en CSS pour styler cet élément -->
+			<h2>LEXIS<br />NOVA</h2>
+			<!-- h2 = sous-titre (niveau 2) -->
+			<!-- br = retour à la ligne à l’intérieur du texte -->
+
+			<nav>
+				<!-- nav = zone de navigation (groupe de liens) -->
+				<ul>
+					<!-- ul = “unordered list” = liste à puces -->
+					<li>
+						<!-- li = élément d’une liste -->
+						<a href="#cabinet">Le cabinet</a>
+						<!-- a = lien cliquable -->
+						<!-- href="#cabinet" = lien interne vers l’élément ayant id="cabinet" -->
+					</li>
+					<li>
+						<a href="#infos">Infos pratiques</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+
+		<!-- CONTENU -->
+		<main class="contenu">
+			<!-- main = contenu principal de la page -->
+			<!-- class="contenu" = utilisé en CSS pour la mise en page -->
+
+			<!-- SECTION 1 -->
+			<section id="cabinet" class="bloc bloc-cabinet">
+				<!-- section = bloc de contenu thématiquement cohérent -->
+				<!-- id="cabinet" = permet de cibler la section (ex : ancres de navigation) -->
+				<!-- class="bloc bloc-cabinet" = deux classes pour appliquer plusieurs styles -->
+
+				<img src="./pp_tp.jpg" class="bande-photo" />
+				<!-- img = image affichée -->
+				<!-- src = chemin vers le fichier image -->
+				<!-- class="bande-photo" = style spécifique appliqué via CSS -->
+
+				<h1>Cabinet LexisNova</h1>
+				<!-- h1 = titre principal de la page -->
+
+				<p>
+					Droit du numérique • Conformité RGPD • Droit des affaires.
+					Notre approche est moderne, rigoureuse et pédagogique.
+				</p>
+				<!-- p = paragraphe de texte -->
+			</section>
+
+			<!-- SECTION 2 : ENGAGEMENTS + CONTACT côte à côte -->
+			<section id="infos" class="bloc-ligne">
+				<!-- id="infos" = ancre pour le lien du menu -->
+				<!-- class="bloc-ligne" = style spécial pour afficher les blocs en ligne (flex) -->
+
+				<!-- ENGAGEMENTS -->
+				<div class="bloc bloc-engagements">
+					<!-- div = conteneur générique (sans signification sémantique) -->
+					<h2>Nos engagements</h2>
+					<ul>
+						<li>✔ Transparence des honoraires</li>
+						<li>✔ Réactivité dans le suivi</li>
+						<li>✔ Confidentialité et rigueur</li>
+					</ul>
+				</div>
+
+				<!-- CONTACT -->
+				<div class="bloc bloc-contact">
+					<h2>Contact</h2>
+					<p>
+						Email :
+						<a href="mailto:contact@lexisnova.fr">
+							<!-- href="mailto:..." = ouvre le client mail avec l’adresse pré-remplie -->
+							contact@lexisnova.fr
+						</a>
+					</p>
+					<p>Tél : 0123456789</p>
+					<!-- p = nouveau paragraphe pour le téléphone -->
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

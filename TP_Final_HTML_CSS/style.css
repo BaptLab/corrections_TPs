@@ -1,0 +1,111 @@
+/* GLOBAL */
+/* * = sélecteur universel : cible tous les éléments */
+* {
+	box-sizing: border-box; /* Les bordures et padding sont inclus dans width/height → plus simple pour gérer les tailles */
+}
+
+body {
+	margin: 0; /* Supprime la marge par défaut autour de la page */
+	font-family: Arial, sans-serif; /* Définit la police principale du site */
+	background-color: #f6f7fb; /* Couleur de fond de la page */
+	color: #222; /* Couleur du texte par défaut (gris très foncé) */
+	display: flex; /* Permet de mettre la sidebar et le contenu principal côte à côte (flexbox) */
+}
+
+/* SIDEBAR À GAUCHE */
+.sidebar {
+	width: 180px; /* Largeur fixe de la barre latérale */
+	background-color: #e7efff; /* Couleur de fond bleu clair */
+	padding: 20px; /* Espace interne entre le bord et le contenu */
+	border-right: 1px solid #cfd8ea; /* Traits verticaux séparant la sidebar du contenu */
+	height: 100vh; /* Hauteur = 100% de la hauteur de la fenêtre (viewport height) */
+}
+
+.sidebar h2 {
+	margin-top: 0; /* Supprime la marge supérieure par défaut du h2 */
+	font-size: 1.4rem; /* Taille de police relative à la taille de base */
+	line-height: 1.1; /* Hauteur de ligne : rapproche ou espace les lignes */
+	color: #0b3b78; /* Couleur du texte (bleu foncé) */
+}
+
+.sidebar ul {
+	list-style: none; /* Supprime les puces de la liste */
+	padding: 0; /* Supprime le retrait gauche par défaut de la liste */
+}
+
+.sidebar li {
+	margin-bottom: 12px; /* Espace vertical entre chaque élément du menu */
+}
+
+.sidebar a {
+	color: #2c3e55; /* Couleur des liens dans la sidebar */
+	text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.sidebar a:hover {
+	color: #0b3b78; /* Change la couleur du lien au survol (effet visuel) */
+}
+
+/* CONTENU PRINCIPAL */
+.contenu {
+	margin-left: 180px; /* Décale le contenu pour ne pas passer sous la sidebar (même largeur que .sidebar) */
+	padding: 20px 40px; /* Espace interne : 20px vertical, 40px horizontal */
+	flex: 1; /* Le contenu principal prend tout l’espace horizontal restant */
+}
+
+/* BLOC GÉNÉRIQUE */
+.bloc {
+	background-color: white; /* Fond blanc pour détacher les blocs du fond gris */
+	border: 1px solid #dbe3f0; /* Bordure légère autour du bloc */
+	border-radius: 6px; /* Coins légèrement arrondis */
+	padding: 20px; /* Espace interne du bloc */
+	margin-bottom: 20px; /* Espace sous chaque bloc (séparation verticale) */
+}
+
+/* BANDE PHOTO */
+.bande-photo {
+	width: 100%; /* L’image prend toute la largeur disponible du bloc */
+	height: 300px; /* Hauteur fixe de la bande d’image */
+	background: #b7c3d6; /* Couleur de fond visible si l’image ne charge pas */
+	object-fit: cover; /* L’image remplit le cadre en conservant ses proportions (recadrage si nécessaire) */
+	filter: grayscale(100%); /* Affiche l’image en noir et blanc */
+	border: 2px solid #34445a; /* Bordure plus marquée autour de la photo */
+	display: flex; /* Active flexbox (utile si on veut centrer un texte alternatif dedans) */
+	align-items: center; /* Centre verticalement le contenu interne (si texte) */
+	justify-content: center; /* Centre horizontalement le contenu interne (si texte) */
+	margin-bottom: 16px; /* Espace sous la photo avant le reste du contenu */
+	font-weight: bold; /* Texte en gras si l’image ne s’affiche pas et que du texte est visible */
+}
+
+/* --- BLOC DOUBLE (engagements + contact) --- */
+.bloc-ligne {
+	display: flex; /* Met les deux blocs (engagements + contact) sur une même ligne */
+	gap: 20px; /* Espace horizontal entre les deux blocs */
+}
+
+/* Chaque bloc prend la même largeur */
+.bloc-engagements,
+.bloc-contact {
+	flex: 1; /* Chaque bloc occupe 50% de l’espace disponible dans .bloc-ligne */
+}
+
+/* Engagements */
+.bloc-engagements ul {
+	list-style: none; /* Pas de puces pour la liste des engagements */
+	padding: 0; /* Supprime le retrait par défaut de la liste */
+}
+
+.bloc-engagements li {
+	margin-bottom: 6px; /* Espace vertical entre chaque engagement */
+	color: #0b3b78; /* Couleur bleue pour mettre les engagements en valeur */
+}
+
+/* Contact */
+.bloc-contact a {
+	color: #0b3b78; /* Couleur des liens de contact */
+	text-decoration: none; /* Pas de soulignement par défaut */
+}
+
+.bloc-contact a:hover {
+	text-decoration: underline; /* Soulignement au survol pour signaler que c’est cliquable */
+}
